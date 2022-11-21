@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    gap: 20px;
+}
+
+.navlinks {
+    display: flex;
+    gap: 1px;
+    align-items: baseline;
+    margin-left: auto;
+}
+
+.navlinks li {
+    padding: 20px 20px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon-box i{
+    color: rgba(0, 0, 0, 0.603);
+}
+.icon-box p {
+    font-size: 0.8rem;
+    color: #00000088;
+}
+.line {
+    width: 2px;
+    margin-block: 15px;
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+.signin-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: auto;
+    gap: 30px;
+}
+
+.signin-box a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.664);
+    font-weight: 600;
+    transition: 0.4s;
+}
+.signin-box a:hover {
+    text-shadow: 1px 1px 1px rgba(128, 128, 128, 0.438);
+}
+
+.signin-box button {
+    padding: 10px 20px;
+    background: none;
+    border:3px solid #0a66c283;
+    color: #0a66c286;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.signin-box button:hover{
+    background-color: #0a66c217;
+}
+
+.logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.logo img{
+    max-width: 150px;
+    margin-left: 50px;
+    margin-block: auto;
+}
+.main-page{
+    height: 500px;
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+}
+.main-page img{
+    width: 50%;
+}
+.title-box{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+    margin-left: 100px;
+    gap: 10px;
+}
+.title-box h1{
+    font-size: 3rem;
+    padding: 50px;
+    font-weight: 300;
+    color: #8f5849;
+}
+.job-srh{
+    width: 70%;
+    border: 2px solid rgba(0, 0, 0, 0.082);
+    margin-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    transition: 0.4s;
+}
+.job-srh p{
+    padding: 20px 20px;
+}
+.job-srh i{
+    padding: 10px;
+
+}
+@media only screen and (max-width:670px){
+    .main-page{
+        gap: 50px;
+    }
+    .main-page img{
+        width: 100%;
+    }
+    .title-box{
+        width: 100%;
+    }
+}
+.job-srh:hover{
+    box-shadow: 3px 3px 3px rgba(128, 128, 128, 0.425);
+}
